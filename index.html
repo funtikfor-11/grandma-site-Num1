@@ -149,5 +149,147 @@
       content: " [ON]";
       color: #000000;
     }
+    .netscape-badge {
+        width: 285px;
+        padding: 0.3rem 0.5rem;
+        border: 1px solid var(--border-color);
+        background-color: var(--paper-alt);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.78rem;
+        color: var(--ink-muted);
+        white-space: nowrap;
+    }
+    html:has(#no-glasses:checked) .netscape-badge {
+        border: 2px solid #ffff00;
+    }
 
-</html>
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 0.3rem;
+    }
+
+    nav li {
+        flex: 1;
+    }
+
+    .tab-label {
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0.75rem;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.9rem;
+        font-weight: bold;
+        background-color: var(--paper-alt);
+        color: var(--ink-color);
+        border: 2px solid var(--border-color);
+        border-bottom: 0;
+        user-select: none;
+    }
+    
+    body:has(#tab-recipes:checked) label[for="tab-recipes"],
+    body:has(#tab-album:checked) label[for="tab-album"],
+    body:has(#tab-quiz:checked) label[for="tab-quiz"] {
+        background-color: var(--paper-bg);
+        color: var(--maroon);
+        margin-bottom: -1px;
+        position: relative;
+        z-index: 2;
+    }
+
+    html:has(#no-glasses:checked) body:has(#tab-recipes:checked) label[for="tab-recipes"],
+    html:has(#no-glasses:checked) body:has(#tab-album:checked) label[for="tab-album"],
+    html:has(#no-glasses:checked) body:has(#tab-quiz:checked) label[for="tab-quiz"] {
+      background-color: #ffff00;
+      color: #000000;
+      border: 3px solid #ffff00;
+      border-bottom: 0;
+    }
+
+    main {
+        border: 2px solid #8c8270;
+        border-top: 2px solid #8c8270;
+        background-color: var(--paper-bg);
+        padding: 1.25rem;
+    }
+
+    html:has(#no-glasses:checked) main {
+        border: 3px solid #ffff00;
+        border-top: 3px solid #ffff00;
+    }
+
+    .tab-content {
+        display: none;
+    }
+    
+    body:has(#tab-recipes:checked) #section-recipes,
+    body:has(#tab-album:checked) #section-album,
+    body:has(#tab-quiz:checked) #section-quiz {
+        display: block;
+    }
+
+    .section-intro {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.15rem;
+    }
+
+    .section-intro h2 {
+      font-size: 1.45rem;
+      color: var(--maroon);
+      margin-bottom: 0.25rem;
+    }
+
+    .section-intro p {
+      margin: 0;
+      color: var(--ink-muted);
+    }
+
+    .recipe-card {
+        border: 1px solid var(--border-color);
+        background-color:var(--paper-alt);
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .recipe-card:last-child{
+        margin-bottom: 0;
+    }   
+
+    html:has(#no-glasses:checked) .recipe-card {
+        border: 3px solid #ffff00;
+    }
+
+    .recipe-card h3 {
+        font-size: 1.2rem;
+        color: var(--navy);
+        margin-bottom: 0.4rem;
+    }
+
+    .recipe-specs {
+        margin: 0 0 0.6rem;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.85rem;
+        color: var(--ink-muted);
+    }
+
+    details {
+        border: 1px solid var(--border-color);
+        background-color: var(--paper-bg);
+        padding: 0.55rem 0.75rem;
+        margin-top: 0.65rem;
+    }
+
+    html:has(#no-glasses:checked) details {
+        border: 3px solid #ffff00;
+    }
+
+    summary {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: var(--green-ink);
+        cursor: var(--cursor-yarn);
+    }
