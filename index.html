@@ -476,3 +476,122 @@
     #section-quiz:has(#q1-a:checked):has(#q2-c:checked):has(#q3-b:checked) .honor-certificate {
         display: block;
     }
+
+    footer {
+        margin-top: 1.25rem;
+        padding-top: 0.85rem;
+        border-top: 1px solid var(--border-color);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.82rem;
+        color: var(--ink-muted);
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0.25rem 0;
+    }
+    
+    @media (max-width: 600px) {
+        body {
+            margin: 0.2rem;
+            padding: 1rem;
+        }
+
+        nav ul {
+            flex-direction: column;
+        }
+    }
+    
+        </style>
+    </head>
+    <body>
+  <input type="radio" name="tab" id="tab-recipes" class="visually-hidden" checked>
+  <input type="radio" name="tab" id="tab-album" class="visually-hidden">
+  <input type="radio" name="tab" id="tab-quiz" class="visually-hidden">
+
+  <header>
+    <p class="dateline">Saturday, March 14, 1998</p>
+    <h1>Grandma's Corner from 1998
+    </h1>
+        "Written in plain HTML on a rainy Sunday afternoon. No blinking ads, no tracking cookies—unless I baked them."
+    </p>
+
+    <fieldset class="header-tools">
+        <legend class="visually-hidden">Reading comfort control</legend>
+        <input type="checkbox" id="no-glasses" class="visually-hidden">
+        <label for="no-glasses" class="glasses-toggle">No Glasses Mode</label>
+    </fieldset>
+
+    <aside class="netscape-badge">Best viewed in Netscape Navigator 4.0</aside>
+  </header>
+
+  <nav aria-label="Notebook sections">
+    <ul>
+      <li><label for="tab-recipes" class="tab-label">Recipe Box</label></li>
+      <li><label for="tab-album" class="tab-label">1998 Photo Album</label></li>
+      <li><label for="tab-quiz" class="tab-label">90s Memory Quiz</label></li>
+    </ul>
+  </nav>
+
+  <main>    
+    <section id="section-recipes" class="tab-section" aria-labelledby="heading-recipes">
+      <header class="section-intro">
+        <h2 id="heading-recipes">Recipe Box</h2>
+        <p>Three index cards from the wooden box beside the stove. Click any secret note below if you want the pie crust to flake.</p>
+      </header>
+    
+      <article class="recipe-card">
+        <h3>1. Sunday Orchard Apple Pie</h3>
+        <p class="recipe-specs">Prep: 25 mins | Bake: 375&deg;F for 50 mins | Serves: 8</p>
+        <p>Tart green apples, real salted butter, and cinnamon—without a single shortcut from the freezer aisle.</p>
+        <details>
+          <summary>Open Grandma's Secret Note</summary>
+          <ul>
+            <li>6 Granny Smith apples, peeled and sliced thin</li>
+            <li>3/4 cup sugar, 2 tbsp flour, 1 tsp cinnamon</li>
+            <li>2 tbsp cold butter cut into small pea-sized bits</li>
+          </ul>
+          <p class="secret-tip">
+            Keep the pastry butter ice-cold and let the baked pie sit on the counter for one full hour before slicing, or the filling will run all over the plate.
+          </p>
+        </details>
+      </article>
+
+      <article class="recipe-card">
+        <h3>2. Grandma's Famous Chicken Pot Pie</h3>
+        <p class="recipe-specs">Prep: 30 mins | Bake: 400&deg;F for 45 mins | Serves: 6</p>
+        <p>Rich, creamy filling with tender chicken and vegetables, topped with a golden, flaky crust.</p>
+        <details>
+          <summary>Open Grandma's Secret Note</summary>
+          <ul>
+            <li>2 cups cooked chicken, shredded</li>
+            <li>1 cup mixed vegetables (carrots, peas, corn)</li>
+            <li>1/3 cup butter, 1/3 cup flour, 1/2 tsp salt</li>
+          </ul>
+          <p class="secret-tip">
+            Use homemade stock for the best flavor and brush the top crust with an egg wash for a beautiful golden finish.
+          </p>
+        </details>
+      </article>
+      
+      <article class="recipe-card">
+        <h3>3. Three-Ingredient Strawberry Jam</h3>
+        <p class="recipe-specs">Prep: 20 mins | Cook: 35 mins | Makes: 4 jars</p>
+        <p>Ripe June berries cooked down the old-fashioned way with no store-bought pectin packets.</p>
+        <details>
+          <summary>Open Grandma's Secret Note</summary>
+          <ul>
+            <li>2 lbs ripe strawberries, hulled and halved</li>
+            <li>1.5 lbs white sugar</li>
+            <li>Juice of 1 fresh lemon</li>
+          </ul>
+          <p class="secret-tip">
+            Chill a small saucer in the freezer first. Spoon a drop of hot jam onto the cold plate—if the surface wrinkles when you push it with your finger, take the pot off the burner.
+          </p>
+        </details>
+      </article>
+    </section>
+
+    
+  </main>
+
