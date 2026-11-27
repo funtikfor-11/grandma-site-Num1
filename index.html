@@ -1,115 +1,127 @@
-<!DOCTYPE html> 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Grandma's Corner from 1998</title>
-        <style>
-            :root {
-                --desk-bg:#e8e3d5;
-                --paper-bg:#f5f2e9;
-                --paper-alt: #ede8da;
-                --ink-color:#1f1f1f;
-                --ink-muted:#544e43;
-                --border-color:#8c8270;
-                --maroon:#7a1c1c;
-                --navy: #1c3b6e;
-                --green-bg: #e4efe5;
-                --green-border: #2e6636;
-                --green-ink:#193b1e;
-                --red-bg: #f5e4e4;
-                --red-border:#f5e4e4;
-                --red-ink:  #571414;
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grandma's Corner (Est. 1998)</title>
+  <style>
 
-                --cursor-yarn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='15' cy='15' r='10' fill='%23991f1f' stroke='%231f1f1f' stroke-width='1.8'/%3E%3Cpath d='M7 12 Q15 7 23 12 M6 16 Q15 12 24 17 M9 21 Q15 17 21 22 M11 6 Q14 15 10 23 M18 6 Q20 15 16 24' fill='none' stroke='%23f5f2e9' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M23 22 Q28 24 27 29' fill='none' stroke='%23991f1f' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") 24 24 pointer;
-            }
-            html:has(#no-glasses:checked){
-                font-size: 26 px;
-                background-color: #000000;
-            }
-            html:has(#no-glasses:checked) body{
-                background-color: #000000;
-                color: #ffffff;
-                border: 4px solid #ffff00;
-            }
-            html:has(#no-glasses:checked) {
-            --desk--bg:#000000;
-            --paper-bg:#000000;
-            --paper-alt: #141414;
-            --ink-color:#ffffff;
-            --ink-muted:#ffff00;
-            --border-color:#ffff00;
-            --maroon:#ffff00;
-            --green-bg: #002b08;
-            --green-border: #66ff80;
-            --green-ink:#66ff80;
-            --red-bg: #330000;
-            --red-border:#ff6666;
-            --red-ink:  #ffffff;
-            }
-            * {
-                box-sizing: border-box;
-            }
+    :root {
+      --desk-bg: #e8e3d5;
+      --paper-bg: #f5f2e9;
+      --paper-alt: #ede8da;
+      --ink-color: #1f1f1f;
+      --ink-muted: #544e43;
+      --border-color: #8c8270;
+      --maroon: #7a1c1c;
+      --navy: #1c3b6e;
+      --green-bg: #e4efe5;
+      --green-border: #2e6636;
+      --green-ink: #193b1e;
+      --red-bg: #f5e4e4;
+      --red-border: #8a2424;
+      --red-ink: #571414;
 
-            html {
-                font-size: 16px;
-                background-color: var(--desk-bg);
-                cursor: var(--cursor-needle);
-            }
-            body {
-                max-width: 720px;
-                margin: 1.5rem auto 2.5rem;
-                padding: 1.5rem;
-                background-color: var(--paper-bg);
-                color: var(--ink-color);
-                border: 2px solid var(--border-color);
-                font-family: Georgia, "Times New Roman", Times, serif;
-                line-height: 1.55;
-                cursor: var(--cursor-needle);
-            }
+      --cursor-needle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cline x1='3' y1='3' x2='24' y2='24' stroke='%231f1f1f' stroke-width='3.5' stroke-linecap='round'/%3E%3Cline x1='3' y1='3' x2='24' y2='24' stroke='%23d6d2c4' stroke-width='1.5' stroke-linecap='round'/%3E%3Ccircle cx='25' cy='25' r='4.2' fill='%237a1c1c' stroke='%231f1f1f' stroke-width='1.5'/%3E%3C/svg%3E") 2 2, auto;
 
-            a:hover,
-            label:hover,
-            summary:hover,
-            input:hover {
-                cursor: var(--cursor-yarn);
-            }
-            
-            .visually-hidden {
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                overflow: hidden;
-                clip: rect(0, 0, 0, 0);
-                white-space: nowrap;
-            }
-            
-            h1, h2, h3, Legend {
-                font-family: "Georgia", Times, serif;
-                font-weight: normal;
-                margin-top: 0; 
-            }
+      --cursor-yarn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='15' cy='15' r='10' fill='%23991f1f' stroke='%231f1f1f' stroke-width='1.8'/%3E%3Cpath d='M7 12 Q15 7 23 12 M6 16 Q15 12 24 17 M9 21 Q15 17 21 22 M11 6 Q14 15 10 23 M18 6 Q20 15 16 24' fill='none' stroke='%23f5f2e9' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M23 22 Q28 24 27 29' fill='none' stroke='%23991f1f' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") 24 24, pointer;
+    }
 
-            header {
-                border-bottom: 2px solid var(--border-color);
-                padding-bottom: 1.1rem;
-                margin-bottom: 1.5rem;
-            }
 
-            .dateline {
-                margin: 0 0 0.5rem;
-                font-family: "Courier New", Courier, monospace;
-                font-size: 0.82rem;
-                color: var(--ink-muted);
-                text-transform: uppercase;
+
+    html:has(#no-glasses:checked) {
+      font-size: 26px;
+      background-color: #000000;
+    }
+
+    html:has(#no-glasses:checked) body {
+      background-color: #000000;
+      color: #ffffff;
+      border: 4px solid #ffff00;
+    }
+
+    html:has(#no-glasses:checked) {
+      --desk-bg: #000000;
+      --paper-bg: #000000;
+      --paper-alt: #141414;
+      --ink-color: #ffffff;
+      --ink-muted: #ffff00;
+      --border-color: #ffff00;
+      --maroon: #ffff00;
+      --navy: #ffff00;
+      --green-bg: #002b08;
+      --green-border: #66ff80;
+      --green-ink: #ffffff;
+      --red-bg: #330000;
+      --red-border: #ff6666;
+      --red-ink: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      background-color: var(--desk-bg);
+      cursor: var(--cursor-needle);
+    }
+
+    body {
+      max-width: 720px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 1.5rem;
+      background-color: var(--paper-bg);
+      color: var(--ink-color);
+      border: 2px solid var(--border-color);
+      font-family: Georgia, "Times New Roman", Times, serif;
+      line-height: 1.55;
+      cursor: var(--cursor-needle);
+    }
+
+    a:hover,
+    label:hover,
+    summary:hover,
+    input:hover {
+      cursor: var(--cursor-yarn);
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
+
+    h1, h2, h3, legend {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: normal;
+      margin-top: 0;
+    }
+    header {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 1.1rem;
+      margin-bottom: 1.25rem;
+    }
+
+
+    .dateline 
+    {
+      margin: 0 0 0.5rem;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      text-transform: uppercase;
     }
 
     header h1 {
-        font-size: 2rem;
-        color: var(--maroon);
-        margin-bottom: 0.4rem;
+      font-size: 2rem;
+      color: var(--maroon);
+      margin-bottom: 0.35rem;
     }
-    
+
     .subtitle {
       margin: 0 0 1rem;
       font-style: italic;
@@ -120,7 +132,7 @@
       border: 0;
       padding: 0;
       margin: 0 0 0.85rem;
-    } 
+    }
 
     .glasses-toggle {
       display: inline-block;
@@ -149,54 +161,59 @@
       content: " [ON]";
       color: #000000;
     }
+
+
     .netscape-badge {
-        width: 285px;
-        padding: 0.3rem 0.5rem;
-        border: 1px solid var(--border-color);
-        background-color: var(--paper-alt);
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.78rem;
-        color: var(--ink-muted);
-        white-space: nowrap;
-    }
-    html:has(#no-glasses:checked) .netscape-badge {
-        border: 2px solid #ffff00;
+      width: 285px;
+      padding: 0.3rem 0.55rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--paper-alt);
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      white-space: nowrap;
     }
 
+    html:has(#no-glasses:checked) .netscape-badge {
+      border: 2px solid #ffff00;
+    }
+
+
     nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 0.3rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 0.35rem;
     }
 
     nav li {
-        flex: 1;
+      flex: 1;
     }
 
     .tab-label {
-        display: block;
-        text-align: center;
-        padding: 0.5rem 0.75rem;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.9rem;
-        font-weight: bold;
-        background-color: var(--paper-alt);
-        color: var(--ink-color);
-        border: 2px solid var(--border-color);
-        border-bottom: 0;
-        user-select: none;
+      display: block;
+      text-align: center;
+      padding: 0.55rem 0.6rem;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.9rem;
+      font-weight: bold;
+      background-color: var(--paper-alt);
+      color: var(--ink-muted);
+      border: 2px solid var(--border-color);
+      border-bottom: 0;
+      user-select: none;
     }
-    
+
+
     body:has(#tab-recipes:checked) label[for="tab-recipes"],
     body:has(#tab-album:checked) label[for="tab-album"],
     body:has(#tab-quiz:checked) label[for="tab-quiz"] {
-        background-color: var(--paper-bg);
-        color: var(--maroon);
-        margin-bottom: -1px;
-        position: relative;
-        z-index: 2;
+      background-color: var(--paper-bg);
+      color: var(--maroon);
+      margin-bottom: -1px;
+      position: relative;
+      z-index: 2;
     }
 
     html:has(#no-glasses:checked) body:has(#tab-recipes:checked) label[for="tab-recipes"],
@@ -209,25 +226,26 @@
     }
 
     main {
-        border: 2px solid #8c8270;
-        border-top: 2px solid #8c8270;
-        background-color: var(--paper-bg);
-        padding: 1.25rem;
+      border: 2px solid #8c8270;
+      border-top: 2px solid #8c8270;
+      background-color: var(--paper-bg);
+      padding: 1.25rem;
     }
+
 
     html:has(#no-glasses:checked) main {
-        border: 3px solid #ffff00;
-        border-top: 3px solid #ffff00;
+      border: 3px solid #ffff00;
+      border-top: 3px solid #ffff00;
     }
 
-    .tab-content {
-        display: none;
+    .tab-section {
+      display: none;
     }
-    
+
     body:has(#tab-recipes:checked) #section-recipes,
     body:has(#tab-album:checked) #section-album,
     body:has(#tab-quiz:checked) #section-quiz {
-        display: block;
+      display: block;
     }
 
     .section-intro {
@@ -248,278 +266,279 @@
     }
 
     .recipe-card {
-        border: 1px solid var(--border-color);
-        background-color:var(--paper-alt);
-        padding: 1rem;
-        margin-bottom: 1rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--paper-alt);
+      padding: 1rem;
+      margin-bottom: 1rem;
     }
 
-    .recipe-card:last-child{
-        margin-bottom: 0;
-    }   
+    .recipe-card:last-child {
+      margin-bottom: 0;
+    }
 
     html:has(#no-glasses:checked) .recipe-card {
-        border: 3px solid #ffff00;
+      border: 3px solid #ffff00;
     }
 
     .recipe-card h3 {
-        font-size: 1.2rem;
-        color: var(--navy);
-        margin-bottom: 0.4rem;
+      font-size: 1.2rem;
+      color: var(--navy);
+      margin-bottom: 0.35rem;
     }
 
     .recipe-specs {
-        margin: 0 0 0.6rem;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.85rem;
-        color: var(--ink-muted);
+      margin: 0 0 0.6rem;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.85rem;
+      color: var(--ink-muted);
     }
 
     details {
-        border: 1px solid var(--border-color);
-        background-color: var(--paper-bg);
-        padding: 0.55rem 0.75rem;
-        margin-top: 0.65rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--paper-bg);
+      padding: 0.55rem 0.75rem;
+      margin-top: 0.65rem;
     }
 
     html:has(#no-glasses:checked) details {
-        border: 3px solid #ffff00;
+      border: 2px solid #ffff00;
     }
 
     summary {
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.9rem;
-        font-weight: bold;
-        color: var(--green-ink);
-        cursor: var(--cursor-yarn);
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.88rem;
+      font-weight: bold;
+      color: var(--maroon);
+      user-select: none;
     }
+
     details ul {
-        margin: 0.6rem 0 0.5rem;
-        padding-left: 1.2rem;
+      margin: 0.6rem 0 0.5rem;
+      padding-left: 1.2rem;
     }
 
     details li {
-        margin-bottom: 0.25rem;
+      margin-bottom: 0.25rem;
     }
 
+
+
     .secret-tip {
-        margin: 0.5rem 0 0;
-        padding-left: 0.65rem;
-        border-left: 2px solid var(--maroon);
-        font-style: italic;
+      margin: 0.5rem 0 0;
+      padding-left: 0.65rem;
+      border-left: 2px solid var(--maroon);
+      font-style: italic;
     }
 
     .album-entry {
-        border: 1px solid var(--border-color);
-        background-color: var(--paper-alt);
-        padding: 1rem;
-        margin-bottom: 1.2rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--paper-alt);
+      padding: 1rem;
+      margin-bottom: 1.15rem;
     }
 
     .album-entry:last-child {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
 
     html:has(#no-glasses:checked) .album-entry {
-        border: 3px solid #ffff00;
+      border: 3px solid #ffff00;
     }
 
     .album-entry figure {
-        margin: 0;
+      margin: 0;
     }
 
     .album-entry svg {
-        display: block;
-        width: 100%;
-        height: auto;
-        background-color: var(--paper-bg);
-        margin-bottom: 0.75rem;
+      display: block;
+
+      width: 100%;
+      height: auto;
+      background-color: var(--paper-bg);
+      border: 1px solid var(--border-color);
+      margin-bottom: 0.75rem;
     }
 
     html:has(#no-glasses:checked) .album-entry svg {
-        border: 2px solid #ffff00;
+      border: 2px solid #ffff00;
     }
 
     html:has(#no-glasses:checked) .line-primary {
-        stroke: #ffffff;
+      stroke: #ffffff;
     }
 
     html:has(#no-glasses:checked) .line-secondary {
-        stroke: #ffff00;
+      stroke: #ffff00;
     }
 
     html:has(#no-glasses:checked) .svg-label {
-        fill: #ffff00;
+      fill: #ffff00;
     }
 
     .album-entry figcaption time {
-        display: block;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.82rem;
-        color: var(--maroon);
-        margin-bottom: 0.2rem;
+      display: block;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.82rem;
+      color: var(--maroon);
+      margin-bottom: 0.2rem;
     }
 
     .album-entry figcaption strong {
-        display: block;
-        font-size: 1.1rem;
-        margin-bottom: 0.25rem;
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
     }
 
     .album-entry figcaption p {
-        margin: 0;
-        color: var(--ink-muted);
+      margin: 0;
+      color: var(--ink-muted);
     }
-
     .quiz-block {
-        border: 1px solid var(--border-color);
-        background-color: var(--paper-alt);
-        padding: 1rem;
-        margin-bottom: 1.1rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--paper-alt);
+      padding: 1rem;
+      margin-bottom: 1.1rem;
     }
 
     html:has(#no-glasses:checked) .quiz-block {
-        border: 3px solid #ffff00;
+      border: 3px solid #ffff00;
     }
 
     .quiz-block fieldset {
-        border: 0;
-        padding: 0;
-        margin: 0;
+      border: 0;
+      margin: 0;
+      padding: 0;
     }
 
     .quiz-block legend {
-        font-size: 1.1rem;
-        font-weight: bold;
-        color: var(navy);
-        margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: var(--navy);
+      margin-bottom: 0.65rem;
+    }
+
+    .choice-row {
+      display: block;
+      padding: 0.5rem 0.65rem;
+      margin-bottom: 0.45rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--paper-bg);
     }
 
     .choice-row input {
-        margin-right: 0.5rem;
+      margin-right: 0.45rem;
     }
 
     .choice-row:has(.right-ans:checked) {
-        background-color: var(--green-bg);
-        border: 2px solid var(--green-border);
-        color: var(--green-ink);
-        font-weight: bold;
+      background-color: var(--green-bg);
+      border: 2px solid var(--green-border);
+      color: var(--green-ink);
+      font-weight: bold;
     }
-
     .choice-row:has(.wrong-ans:checked) {
-        background-color: var(--red-bg);
-        border: 2px solid var(--red-border);
-        color: var(--red-ink);
-        font-weight: bold;
+      background-color: var(--red-bg);
+      border: 2px solid var(--red-border);
+      color: var(--red-ink);
+      font-weight: bold;
     }
 
     .quiz-note {
-        display: none;
-        margin: 0.65rem 0 0;
-        padding: 0.5rem 0.7rem;
-        font-size: 0.92rem;
-        border-left: 2px solid var(--border-color);
+      display: none;
+      margin: 0.65rem 0 0;
+      padding: 0.5rem 0.7rem;
+      font-size: 0.92rem;
+      border-left: 2px solid var(--border-color);
     }
 
     .quiz-block:has(.right-ans:checked) .note-right {
-        display: block;
-        background-color: var(--green-bg);
-        border-left-color: var(--green-border);
-        color: var(--green-ink);
+      display: block;
+      background-color: var(--green-bg);
+      border-left-color: var(--green-border);
+      color: var(--green-ink);
     }
 
-    .quiz-block:has(.right-ans:checked) .note-wrong {
-        display: block;
-        background-color: var(--red-bg);
-        border-left-color: var(--red-border);
-        color: var(--red-ink);
+    .quiz-block:has(.wrong-ans:checked) .note-wrong {
+      display: block;
+      background-color: var(--red-bg);
+      border-left-color: var(--red-border);
+      color: var(--red-ink);
     }
 
-
     .honor-certificate {
-        display: block;
-        background-color: var(--red-bg);
-        border-left-color: var(--red-border);
-        color: var(--red-ink);
-    }   
-
-    .honor-certificate {
-        display: none;
-        border: 2px solid var(--green-border);
-        background-color: var(--green-bg);
-        color: var(--green-ink);
-        padding: 1.2rem;
-        text-align: center;
-        margin-top: 1rem;
+      display: none;
+      border: 2px solid var(--green-border);
+      background-color: var(--green-bg);
+      color: var(--green-ink);
+      padding: 1.15rem;
+      text-align: center;
+      margin-top: 1rem;
     }
 
     html:has(#no-glasses:checked) .honor-certificate {
-        border: 3px solid #ffff00;
+      border: 3px solid #ffff00;
     }
 
-    .honor-certificate h3 {
-        font-size: 1.3rem;
-        margin-bottom: 0.35rem;
-        text-transform: uppercase;
+    .honor-certificate h3 
+    {
+      font-size: 1.3rem;
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
     }
-    
+
     .honor-certificate p {
-        margin: 0.3rem 0; 
+      margin: 0.3rem 0;
     }
-
     .honor-certificate .sig {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 0.85rem;
-        margin-top: 0.65rem;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.85rem;
+      margin-top: 0.65rem;
     }
 
     #section-quiz:has(#q1-a:checked):has(#q2-c:checked):has(#q3-b:checked) .honor-certificate {
-        display: block;
+      display: block;
     }
-
     footer {
-        margin-top: 1.25rem;
-        padding-top: 0.85rem;
-        border-top: 1px solid var(--border-color);
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.82rem;
-        color: var(--ink-muted);
-        text-align: center;
+      margin-top: 1.25rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--border-color);
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      text-align: center;
     }
 
     footer p {
-        margin: 0.25rem 0;
+      margin: 0.25rem 0;
     }
-    
-    @media (max-width: 600px) {
-        body {
-            margin: 0.2rem;
-            padding: 1rem;
-        }
 
-        nav ul {
-            flex-direction: column;
-        }
+    @media (max-width: 600 px) {
+      body {
+        margin: 0.5rem;
+        padding: 1rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
     }
-    
-        </style>
-    </head>
-    <body>
+  </style>
+</head>
+<body>
   <input type="radio" name="tab" id="tab-recipes" class="visually-hidden" checked>
   <input type="radio" name="tab" id="tab-album" class="visually-hidden">
   <input type="radio" name="tab" id="tab-quiz" class="visually-hidden">
 
   <header>
-    <p class="dateline">Saturday, March 14, 1998</p>
-    <h1>Grandma's Corner from 1998
-    </h1>
-        "Written in plain HTML on a rainy Sunday afternoon. No blinking ads, no tracking cookies—unless I baked them."
+    <p class="dateline">Personal Home Page &bull; Est. October 1998</p>
+    <h1>Grandma's Corner (Est. 1998)</h1>
+    <p class="subtitle">
+      "Written in plain HTML on a rainy Sunday afternoon. No blinking ads, no tracking cookies—unless I baked them."
     </p>
 
     <fieldset class="header-tools">
-        <legend class="visually-hidden">Reading comfort control</legend>
-        <input type="checkbox" id="no-glasses" class="visually-hidden">
-        <label for="no-glasses" class="glasses-toggle">No Glasses Mode</label>
+      <legend class="visually-hidden">Reading comfort control</legend>
+      <input type="checkbox" id="no-glasses" class="visually-hidden">
+      <label for="no-glasses" class="glasses-toggle">No Glasses Mode</label>
     </fieldset>
 
     <aside class="netscape-badge">Best viewed in Netscape Navigator 4.0</aside>
@@ -530,16 +549,16 @@
       <li><label for="tab-recipes" class="tab-label">Recipe Box</label></li>
       <li><label for="tab-album" class="tab-label">1998 Photo Album</label></li>
       <li><label for="tab-quiz" class="tab-label">90s Memory Quiz</label></li>
-    </ul>
+    </ul>m
   </nav>
 
-  <main>    
+  <main>
     <section id="section-recipes" class="tab-section" aria-labelledby="heading-recipes">
       <header class="section-intro">
         <h2 id="heading-recipes">Recipe Box</h2>
         <p>Three index cards from the wooden box beside the stove. Click any secret note below if you want the pie crust to flake.</p>
       </header>
-    
+
       <article class="recipe-card">
         <h3>1. Sunday Orchard Apple Pie</h3>
         <p class="recipe-specs">Prep: 25 mins | Bake: 375&deg;F for 50 mins | Serves: 8</p>
@@ -558,22 +577,22 @@
       </article>
 
       <article class="recipe-card">
-        <h3>2. Grandma's Famous Chicken Pot Pie</h3>
-        <p class="recipe-specs">Prep: 30 mins | Bake: 400&deg;F for 45 mins | Serves: 6</p>
-        <p>Rich, creamy filling with tender chicken and vegetables, topped with a golden, flaky crust.</p>
+        <h3>2. Kettle Chicken Noodle Soup</h3>
+        <p class="recipe-specs">Prep: 15 mins | Simmer: 2 hours | Makes: 1 stockpot</p>
+        <p>Cures autumn chills, stubborn colds, and long afternoons at the computer desk.</p>
         <details>
           <summary>Open Grandma's Secret Note</summary>
           <ul>
-            <li>2 cups cooked chicken, shredded</li>
-            <li>1 cup mixed vegetables (carrots, peas, corn)</li>
-            <li>1/3 cup butter, 1/3 cup flour, 1/2 tsp salt</li>
+            <li>1 whole bone-in chicken, 3 carrots, 3 stalks celery</li>
+            <li>1 whole yellow onion, 2 bay leaves, black peppercorns</li>
+            <li>Wide egg noodles and fresh chopped dill</li>
           </ul>
           <p class="secret-tip">
-            Use homemade stock for the best flavor and brush the top crust with an egg wash for a beautiful golden finish.
+            Never let the pot boil hard—a gentle simmer keeps the broth golden and clear. Always boil the noodles in a separate pan so they don't soak up your soup overnight.
           </p>
         </details>
       </article>
-      
+
       <article class="recipe-card">
         <h3>3. Three-Ingredient Strawberry Jam</h3>
         <p class="recipe-specs">Prep: 20 mins | Cook: 35 mins | Makes: 4 jars</p>
@@ -592,18 +611,16 @@
       </article>
     </section>
 
-    <section id="section-album">
-        aria-labelledby="heading-album">
+    <section id="section-album" class="tab-section" aria-labelledby="heading-album">
       <header class="section-intro">
         <h2 id="heading-album">1998 Photo Album</h2>
-        <p>Snapshots from a year of family gatherings, garden blooms, and neighborhood adventures.</p>
+        <p>Three everyday items from our family study, sketched in ink before anyone invented cloud storage.</p>
       </header>
-    </section>
 
-    <article class="album-entry">
+      <article class="album-entry">
         <figure>
-            <svg viewBox="0 0 360 200" role="img" aria-label="2-color sketch of a 3.5-inch floppy disk">
-                <polygon class="line-primary" points="110,18 242,18 256,32 256,182 110,182" fill="none" stroke="#1f1f1f" stroke-width="2"/>
+          <svg viewBox="0 0 360 200" role="img" aria-label="2-color sketch of a 3.5-inch floppy disk">
+            <polygon class="line-primary" points="110,18 242,18 256,32 256,182 110,182" fill="none" stroke="#1f1f1f" stroke-width="2"/>
             <rect class="line-primary" x="145" y="18" width="72" height="54" fill="none" stroke="#1f1f1f" stroke-width="2"/>
             <rect class="line-primary" x="188" y="26" width="16" height="36" fill="none" stroke="#1f1f1f" stroke-width="1.5"/>
             <rect class="line-secondary" x="128" y="92" width="104" height="90" fill="none" stroke="#7a1c1c" stroke-width="2"/>
@@ -623,7 +640,7 @@
 
       <article class="album-entry">
         <figure>
-            <svg viewBox="0 0 360 200" role="img" aria-label="2-color sketch of a cassette tape and pencil">
+          <svg viewBox="0 0 360 200" role="img" aria-label="2-color sketch of a cassette tape and pencil">
             <rect class="line-primary" x="40" y="34" width="224" height="132" rx="4" fill="none" stroke="#1f1f1f" stroke-width="2"/>
             <rect class="line-secondary" x="56" y="48" width="192" height="72" fill="none" stroke="#7a1c1c" stroke-width="1.8"/>
             <rect class="line-primary" x="86" y="74" width="132" height="34" fill="none" stroke="#1f1f1f" stroke-width="1.5"/>
@@ -634,18 +651,18 @@
             <rect class="line-primary" x="292" y="42" width="14" height="114" fill="none" stroke="#1f1f1f" stroke-width="1.8"/>
             <polygon class="line-primary" points="292,42 299,22 306,42" fill="none" stroke="#1f1f1f" stroke-width="1.8"/>
             <rect class="line-secondary" x="292" y="156" width="14" height="12" fill="none" stroke="#7a1c1c" stroke-width="1.8"/>
-            </svg>
-            <figcaption>
-                <time datetime="1998-06-18">June 18, 1998</time>
+          </svg>
+          <figcaption>
+            <time datetime="1998-06-18">June 18, 1998</time>
             <strong>C-90 Cassette &amp; #2 Pencil</strong>
             <p>Whenever the tape player chewed up the ribbon, ten seconds with a wooden pencil set everything right again.</p>
-            </figcaption>
+          </figcaption>
         </figure>
       </article>
 
       <article class="album-entry">
         <figure>
-            <svg viewBox="0 0 360 200" role="img" aria-label="2-color sketch of a 1998 CRT monitor">
+          <svg viewBox="0 0 360 200" role="img" aria-label="2-color sketch of a 1998 CRT monitor">
             <rect class="line-primary" x="96" y="20" width="168" height="122" rx="4" fill="none" stroke="#1f1f1f" stroke-width="2"/>
             <rect class="line-primary" x="110" y="34" width="140" height="88" fill="none" stroke="#1f1f1f" stroke-width="1.8"/>
             <text class="svg-label" x="120" y="56" font-family="Courier New, monospace" font-size="11" fill="#1f1f1f">C:\&gt; DIALUP.EXE</text>
@@ -654,8 +671,8 @@
             <polygon class="line-primary" points="150,142 210,142 218,162 142,162" fill="none" stroke="#1f1f1f" stroke-width="1.8"/>
             <rect class="line-primary" x="124" y="162" width="112" height="10" fill="none" stroke="#1f1f1f" stroke-width="1.8"/>
             <line class="line-primary" x1="56" y1="172" x2="304" y2="172" stroke="#1f1f1f" stroke-width="1.8"/>
-            </svg>
-            <figcaption>
+          </svg>
+          <figcaption>
             <time datetime="1998-10-04">October 4, 1998</time>
             <strong>The 15-Inch Beige Monitor</strong>
             <p>Weighed forty pounds, hummed softly like a refrigerator, and kept the study warm all through November.</p>
@@ -664,29 +681,41 @@
       </article>
     </section>
 
-    <article class="quiz-block">
+    <section id="section-quiz" class="tab-section" aria-labelledby="heading-quiz">
+      <header class="section-intro">
+        <h2 id="heading-quiz">90s Memory Quiz</h2>
+        <p>Answer all three questions honestly to earn Grandma's Official Honor Roll Certificate.</p>
+      </header>
+
+      <article class="quiz-block">
         <fieldset>
           <legend>1. What happened when someone picked up the kitchen phone while you were online?</legend>
 
           <label class="choice-row" for="q1-a">
             <input type="radio" name="q1" id="q1-a" class="right-ans">
-            <span>The dial-up modem screeched and disconnected you immediately.</span>
+            <span>The dial-up modem screeched and disconnected you immediately.
+              
+            </span>
           </label>
 
           <label class="choice-row" for="q1-b">
             <input type="radio" name="q1" id="q1-b" class="wrong-ans">
-            <span>The browser automatically switched to wireless fiber.</span>
+            <span>The browser automatically switched to wireless fiber.
+
+            </span>
           </label>
 
           <label class="choice-row" for="q1-c">
             <input type="radio" name="q1" id="q1-c" class="wrong-ans">
-            <span>The phone call came through the floppy drive.</span>
+            <span>The phone call came through the floppy drive.
+
+            </span>
           </label>
         </fieldset>
         <p class="quiz-note note-right">Correct! Calling your Aunt Linda always took priority over downloading a picture.</p>
         <p class="quiz-note note-wrong">Not quite. One copper phone line could only do one job at a time.</p>
       </article>
-    
+
       <article class="quiz-block">
         <fieldset>
           <legend>2. Why did a 1998 computer mouse stop moving smoothly across the desk?</legend>
@@ -709,43 +738,31 @@
         <p class="quiz-note note-right">Spot on! Unscrew the bottom ring, clean the rollers, and it worked like new.</p>
         <p class="quiz-note note-wrong">No, dear. Flip the old beige mouse over in your memory and try again.</p>
       </article>
-      
+
       <article class="quiz-block">
         <fieldset>
-          <legend>3. What reminder was printed on every rented VHS tape box?
-
-          </legend>
+          <legend>3. What reminder was printed on every rented VHS tape box?</legend>
 
           <label class="choice-row" for="q3-a">
             <input type="radio" name="q3" id="q3-a" class="wrong-ans">
-            <span>"Please like, share, and subscribe."
-
-            </span>
+            <span>"Please like, share, and subscribe."</span>
           </label>
 
           <label class="choice-row" for="q3-b">
             <input type="radio" name="q3" id="q3-b" class="right-ans">
-            <span>"Be Kind, Please Rewind."
-
-            </span>
+            <span>"Be Kind, Please Rewind."</span>
           </label>
 
           <label class="choice-row" for="q3-c">
             <input type="radio" name="q3" id="q3-c" class="wrong-ans">
-            <span>"Tap screen to skip commercials."
-
-            </span>
+            <span>"Tap screen to skip commercials."</span>
           </label>
         </fieldset>
-        <p class="quiz-note note-right">Right you are! Returning an unrewound tape meant a $1.00 fine at the counter.
-
-        </p>
-        <p class="quiz-note note-wrong">Oh, come now. Nobody was subscribing to video tapes in 1998.
-
-        </p>
+        <p class="quiz-note note-right">Right you are! Returning an unrewound tape meant a $1.00 fine at the counter.</p>
+        <p class="quiz-note note-wrong">Oh, come now. Nobody was subscribing to video tapes in 1998.</p>
       </article>
 
-            <aside class="honor-certificate" role="status">
+      <aside class="honor-certificate" role="status">
         <h3>Official Honor Roll Certificate</h3>
         <p><strong>Score: 3 out of 3 Correct</strong></p>
         <p>Awarded for remembering how computers worked before pocket telephones. Help yourself to a slice of apple pie.</p>
@@ -760,10 +777,3 @@
   </footer>
 </body>
 </html>
-
-
-            
-
-
-  </main>
-
