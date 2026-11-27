@@ -293,3 +293,186 @@
         color: var(--green-ink);
         cursor: var(--cursor-yarn);
     }
+    details ul {
+        margin: 0.6rem 0 0.5rem;
+        padding-left: 1.2rem;
+    }
+
+    details li {
+        margin-bottom: 0.25rem;
+    }
+
+    .secret-tip {
+        margin: 0.5rem 0 0;
+        padding-left: 0.65rem;
+        border-left: 2px solid var(--maroon);
+        font-style: italic;
+    }
+
+    .album-entry {
+        border: 1px solid var(--border-color);
+        background-color: var(--paper-alt);
+        padding: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .album-entry:last-child {
+        margin-bottom: 0;
+    }
+
+    html:has(#no-glasses:checked) .album-entry {
+        border: 3px solid #ffff00;
+    }
+
+    .album-entry figure {
+        margin: 0;
+    }
+
+    .album-entry svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: var(--paper-bg);
+        margin-bottom: 0.75rem;
+    }
+
+    html:has(#no-glasses:checked) .album-entry svg {
+        border: 2px solid #ffff00;
+    }
+
+    html:has(#no-glasses:checked) .line-primary {
+        stroke: #ffffff;
+    }
+
+    html:has(#no-glasses:checked) .line-secondary {
+        stroke: #ffff00;
+    }
+
+    html:has(#no-glasses:checked) .svg-label {
+        fill: #ffff00;
+    }
+
+    .album-entry figcaption time {
+        display: block;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.82rem;
+        color: var(--maroon);
+        margin-bottom: 0.2rem;
+    }
+
+    .album-entry figcaption strong {
+        display: block;
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .album-entry figcaption p {
+        margin: 0;
+        color: var(--ink-muted);
+    }
+
+    .quiz-block {
+        border: 1px solid var(--border-color);
+        background-color: var(--paper-alt);
+        padding: 1rem;
+        margin-bottom: 1.1rem;
+    }
+
+    html:has(#no-glasses:checked) .quiz-block {
+        border: 3px solid #ffff00;
+    }
+
+    .quiz-block fieldset {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .quiz-block legend {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: var(navy);
+        margin-bottom: 0.5rem;
+    }
+
+    .choice-row input {
+        margin-right: 0.5rem;
+    }
+
+    .choice-row:has(.right-ans:checked) {
+        background-color: var(--green-bg);
+        border: 2px solid var(--green-border);
+        color: var(--green-ink);
+        font-weight: bold;
+    }
+
+    .choice-row:has(.wrong-ans:checked) {
+        background-color: var(--red-bg);
+        border: 2px solid var(--red-border);
+        color: var(--red-ink);
+        font-weight: bold;
+    }
+
+    .quiz-note {
+        display: none;
+        margin: 0.65rem 0 0;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.92rem;
+        border-left: 2px solid var(--border-color);
+    }
+
+    .quiz-block:has(.right-ans:checked) .note-right {
+        display: block;
+        background-color: var(--green-bg);
+        border-left-color: var(--green-border);
+        color: var(--green-ink);
+    }
+
+    .quiz-block:has(.right-ans:checked) .note-wrong {
+        display: block;
+        background-color: var(--red-bg);
+        border-left-color: var(--red-border);
+        color: var(--red-ink);
+    }
+
+
+    .honor-certificate {
+        display: block;
+        background-color: var(--red-bg);
+        border-left-color: var(--red-border);
+        color: var(--red-ink);
+    }   
+
+    .honor-certificate {
+        display: none;
+        border: 2px solid var(--green-border);
+        background-color: var(--green-bg);
+        color: var(--green-ink);
+        padding: 1.2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    html:has(#no-glasses:checked) .honor-certificate {
+        border: 3px solid #ffff00;
+    }
+
+    .honor-certificate h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.35rem;
+        text-transform: uppercase;
+    }
+    
+    .honor-certificate p {
+        margin: 0.3rem 0; 
+    }
+
+    .honor-certificate .sig {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.85rem;
+        margin-top: 0.65rem;
+    }
+
+    #section-quiz:has(#q1-a:checked):has(#q2-c:checked):has(#q3-b:checked) .honor-certificate {
+        display: block;
+    }
