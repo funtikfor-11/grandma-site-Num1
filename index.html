@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grandma's Corner from 1998</title>
+        <style>
+            :root {
+                --desk-bg:#e8e3d5;
+                --paper-bg:#f5f2e9;
+                --paper-alt: #ede8da;
+                --ink-color:#1f1f1f;
+                --ink-muted:#544e43;
+                --border-color:#8c8270;
+                --maroon:#7a1c1c;
+                --navy: #1c3b6e;
+                --green-bg: #e4efe5;
+                --green-border: #2e6636;
+                --green-ink:#193b1e;
+                --red-bg: #f5e4e4;
+                --red-border:#f5e4e4;
+                --red-ink:  #571414;
+
+                --cursor-yarn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='15' cy='15' r='10' fill='%23991f1f' stroke='%231f1f1f' stroke-width='1.8'/%3E%3Cpath d='M7 12 Q15 7 23 12 M6 16 Q15 12 24 17 M9 21 Q15 17 21 22 M11 6 Q14 15 10 23 M18 6 Q20 15 16 24' fill='none' stroke='%23f5f2e9' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M23 22 Q28 24 27 29' fill='none' stroke='%23991f1f' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") 24 24 pointer;
+            }
+            html:has(#no-glasses:checked){
+                font-size: 26 px;
+                background-color: #000000;
+            }
+            html:has(#no-glasses:checked) body{
+                background-color: #000000;
+                color: #ffffff;
+                border: 4px solid #ffff00;
+            }
+            html:has(#no-glasses:checked) {
+            --desk--bg:#000000;
+            --paper-bg:#000000;
+            --paper-alt: #141414;
+            --ink-color:#ffffff;
+            --ink-muted:#ffff00;
+            --border-color:#ffff00;
+            --maroon:#ffff00;
+            --green-bg: #002b08;
+            --green-border: #66ff80;
+            --green-ink:#66ff80;
+            --red-bg: #330000;
+            --red-border:#ff6666;
+            --red-ink:  #ffffff;
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            html {
+                font-size: 16px;
+                background-color: var(--desk-bg);
+                cursor: var(--cursor-needle);
+            }
+            body {
+                max-width: 720px;
+                margin: 1.5rem auto 2.5rem;
+                padding: 1.5rem;
+                background-color: var(--paper-bg);
+                color: var(--ink-color);
+                border: 2px solid var(--border-color);
+                font-family: Georgia, "Times New Roman", Times, serif;
+                line-height: 1.55;
+                cursor: var(--cursor-needle);
+            }
+
+            a:hover,
+            label:hover,
+            summary:hover,
+            input:hover {
+                cursor: var(--cursor-yarn);
+            }
+            
+            .visually-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+            }
+            
+            h1, h2, h3, Legend {
+                font-family: "Georgia", Times, serif;
+                font-weight: normal;
+                margin-top: 0; 
+            }
+
+            header {
+                border-bottom: 2px solid var(--border-color);
+                padding-bottom: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .dateline {
+                margin: 0 0 0.5rem;
+                font-family: "Courier New", Courier, monospace;
+                font-size: 0.82rem;
+                color: var(--ink-muted);
+                text-transform: uppercase;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        color: var(--maroon);
+        margin-bottom: 0.4rem;
+    }
+    
+    .subtitle {
+      margin: 0 0 1rem;
+      font-style: italic;
+      color: var(--ink-muted);
+    }
+
+    .header-tools {
+      border: 0;
+      padding: 0;
+      margin: 0 0 0.85rem;
+    } 
+
+    .glasses-toggle {
+      display: inline-block;
+      padding: 0.45rem 0.85rem;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.9rem;
+      font-weight: bold;
+      background-color: var(--paper-alt);
+      color: var(--ink-color);
+      border: 2px solid var(--border-color);
+      user-select: none;
+    }
+
+    .glasses-toggle::after {
+      content: " [OFF]";
+      color: var(--maroon);
+    }
+
+    #no-glasses:checked + .glasses-toggle {
+      background-color: #ffff00;
+      color: #000000;
+      border: 3px solid #ffffff;
+    }
+
+    #no-glasses:checked + .glasses-toggle::after {
+      content: " [ON]";
+      color: #000000;
+    }
+
+</html>
